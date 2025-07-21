@@ -1,12 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link ,useNavigate} from 'react-router-dom';
 import "./Home.css";
 
 const Home = () => {
   const token=localStorage.getItem("token")
+  const navigate=useNavigate()
  
   const handleLogout=()=>{
       // setUserData()
+      navigate("/")
       localStorage.removeItem("token");
       alert("log out successfull")
     }

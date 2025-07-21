@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+}
+
+#home{
+  background-color: rgb(193, 193, 244);
+  height:10vh;
+  width:100vw
+}
